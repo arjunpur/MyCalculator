@@ -1,0 +1,259 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f00"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.00"
+        android:background="#000"
+        android:hint="@string/input_text"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:id = "@+id/number_box"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#000"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/butt_seven"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                style = "@style/ButtonTheme"
+                android:text="@string/butt_seven"
+                android:onClick="enterNumber" />
+
+            <Button
+                android:id="@+id/butt_eight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/butt_eight"
+                android:layout_margin="2dp"
+                style = "@style/ButtonTheme"
+                android:layout_weight = "1"
+                android:onClick="enterNumber" />
+
+            <Button
+                android:id="@+id/butt_nine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/butt_nine"
+                android:layout_margin="2dp"
+                style = "@style/ButtonTheme"
+                android:layout_weight = "1"
+                android:onClick="enterNumber" />
+
+            <Button
+                android:id="@+id/butt_div"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/butt_div"
+                android:layout_margin="2dp"
+                style = "@style/ButtonTheme1"
+                android:layout_weight = "1"
+                android:onClick = "artithOperation"/>
+
+            <Button
+                android:id="@+id/butt_DA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/butt_DA"
+                android:layout_margin="2dp"
+                style = "@style/ButtonTheme"
+                android:layout_weight = "1"
+                android:onClick="deleteAll" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/butt_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style = "@style/ButtonTheme"
+                android:layout_margin="2dp"
+                android:text="@string/butt_four"
+                android:onClick="enterNumber"/>
+
+            <Button
+                android:id="@+id/butt_five"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                style = "@style/ButtonTheme"
+                android:text="@string/butt_five"
+                android:onClick="enterNumber" />
+
+            <Button
+                android:id="@+id/butt_six"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                style = "@style/ButtonTheme"
+                android:text="@string/butt_six"
+                android:onClick="enterNumber" />
+
+            <Button
+                android:id="@+id/butt_mult"
+                style="@style/ButtonTheme1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="@string/butt_mult"
+                android:onClick="artithOperation" />
+
+            <Button
+                android:id="@+id/butt_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                style = "@style/ButtonTheme"
+                android:text="@string/butt_cancel"
+                android:onClick = "cancel" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight = "4" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/butt_one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/butt_one"
+                        android:layout_margin="2dp"
+                        style = "@style/ButtonTheme"
+                        android:layout_weight = "1"
+                        android:onClick="enterNumber" />
+
+                    <Button
+                        android:id="@+id/butt_two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight = "1"
+                        style = "@style/ButtonTheme"
+                        android:layout_margin="2dp"
+                        android:text="@string/butt_two"
+                        android:onClick="enterNumber" />
+
+                    <Button
+                        android:id="@+id/butt_three"
+                        style="@style/ButtonTheme"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:text="@string/butt_three"
+                        android:onClick="enterNumber" />
+
+                    <Button
+                        android:id="@+id/butt_sub"
+                        style="@style/ButtonTheme1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:text="@string/butt_sub"
+                        android:onClick= "artithOperation" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight = "1" >
+
+                    <Button
+                        android:id="@+id/butt_zero"
+                        style="@style/ButtonTheme"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2.07"
+                        android:text="@string/butt_zero"
+                        android:onClick="enterNumber" />
+
+                    <Button
+                        android:id="@+id/butt_M"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        style = "@style/ButtonTheme"
+                        android:text="@string/butt_M"
+                        android:onClick = "remember" />
+
+                    <Button
+                        android:id="@+id/butt_add"
+                        style="@style/ButtonTheme"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:text="@string/butt_add"
+                        android:onClick="artithOperation" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/ButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="0.95"
+                android:text="@string/butt_equals"
+                android:onClick="equalTo" />
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
